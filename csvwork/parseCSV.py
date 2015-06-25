@@ -7,7 +7,7 @@ DATAFILE = "beatles-diskography.csv"
 def parse_file(datafile):
 	data = []
 	with open(datafile, "rb") as f:
-		header = f.readline().split(",")
+		header = f.readline().split(",") # the first row is a header row
 		counter = 0
 		for line in f:
 			if counter == 10:
