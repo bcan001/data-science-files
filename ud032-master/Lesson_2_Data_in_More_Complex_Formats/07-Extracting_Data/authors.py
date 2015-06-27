@@ -11,11 +11,13 @@ article_file = "exampleResearchArticle.xml"
 
 def get_root(fname):
     tree = ET.parse(fname)
+    # get the root element
     return tree.getroot()
 
 
 def get_authors(root):
     authors = []
+    # iterate over the children of the root
     for author in root.findall('./fm/bibl/aug/au'):
         data = {
                 "fnm": None,
