@@ -49,7 +49,7 @@ client = MongoClient(mongolab_uri,
 db = client.get_default_database()
 print db.collection_names()
 
-user = {"name": "Ben Caneba", "email": "bcaneba@gmail.com"}
+user = {"name": "William Caneba", "email": "wcaneba@gmail.com"}
 users = db.users
 user_id = users.insert_one(user).inserted_id
 
