@@ -7,3 +7,5 @@ classify whether a new mushroom will be edible, poisonous, or other, using class
 	-	Odor is the attribute with the most information gain because it has instances with the lowest entropy
 	- this says that odors are characteristic of posinous or edible mushrooms
 	- if you were going to build out a model using only 1 characteristic, use odor
+3. start building a classification / decision tree based on the best attribute.
+4. repeat steps 2 and 3 for each node, calculating the attribute with the most information gain and using that attribute to form the leaf nodes of the tree
