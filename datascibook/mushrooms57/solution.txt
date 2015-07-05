@@ -9,3 +9,25 @@ classify whether a new mushroom will be edible, poisonous, or other, using class
 	- if you were going to build out a model using only 1 characteristic, use odor
 3. start building a classification / decision tree based on the best attribute.
 4. repeat steps 2 and 3 for each node, calculating the attribute with the most information gain and using that attribute to form the leaf nodes of the tree
+
+
+
+
+
+* important equations:
+entropy = - p1*log(p1) - p2*log(p2)...
+p1 = probability that p1 occurs in the data
+
+InformationGain(parent,children) = entropy(parent) - [p(c1)*entropy(c1) + p(c2)*entropy(c2)...]
+entropy(c1) = entropy of child c1
+p(c1) = probability that c1 occurs in the dataset
+
+
+The lower the entropy for each of the nodes calculated, the better the attribute is
+The higher the information gain of the attribute being tested, the better the attribute will be to use in the model
+
+
+
+
+
+
