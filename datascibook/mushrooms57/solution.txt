@@ -1,0 +1,9 @@
+classify whether a new mushroom will be edible, poisonous, or other, using classification (supervised learning)
+
+1. calculate entropy of the entire dataset
+	- entropy graphs are useful for visualizing information gain from different partitions of a dataset
+	- on pg. 60, the bars for each attribute indicate how ACCURATE the attributes are in classification
+2. calculate entropy for attribute values (pg. 60). 
+	-	Odor is the attribute with the most information gain because it has instances with the lowest entropy
+	- this says that odors are characteristic of posinous or edible mushrooms
+	- if you were going to build out a model using only 1 characteristic, use odor
