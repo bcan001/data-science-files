@@ -38,13 +38,28 @@ import math
 # entropy = - p1*log(p1) - p2*log(p2)...
 
 
+def calc_prob(instances,total):
+	return instances / total
+
+def calc_entropy():
+	pass
+
+
 # entropy of parent
-print ((count_poisonous / count_total)*(math.log(count_poisonous / count_total,2)) + (count_edible / count_total)*(math.log(count_edible / count_total,2)))*-1
+parent_entropy = ((count_poisonous / count_total)*(math.log(count_poisonous / count_total,2)) + (count_edible / count_total)*(math.log(count_edible / count_total,2)))*-1
 
 
+# calc entropy for best attribute ODOR
+e(a) = -[p(poisonous) * log(p(poisonous)) + p(edible) * log(p(edible))] # for all mushrooms that have odor 'a'
+e(c) = -[p(poisonous) * log(p(poisonous)) + p(edible) * log(p(edible))] # for all mushrooms that have odor 'c'
+e(f) = -[p(poisonous) * log(p(poisonous)) + p(edible) * log(p(edible))] # for all mushrooms that have odor 'f'
+e(m) = -[p(poisonous) * log(p(poisonous)) + p(edible) * log(p(edible))] # for all mushrooms that have odor 'm'
+e(l) = -[p(poisonous) * log(p(poisonous)) + p(edible) * log(p(edible))] # for all mushrooms that have odor 'l'
+e(p) = -[p(poisonous) * log(p(poisonous)) + p(edible) * log(p(edible))] # for all mushrooms that have odor 'p'
+e(n) = -[p(poisonous) * log(p(poisonous)) + p(edible) * log(p(edible))] # for all mushrooms that have odor 'n'
 
-
-
+# information gain for ODOR
+IG(ODOR) = parent_entropy - [p(a)*e(a) + p(c)*e(c) + ...]  
 
 
 

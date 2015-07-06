@@ -27,6 +27,26 @@ The lower the entropy for each of the nodes calculated, the better the attribute
 The higher the information gain of the attribute being tested, the better the attribute will be to use in the model
 
 
+Laplace correction (for probability of each node):
+p(c) = n+1 / n+m+2 
+n = # of examples belonging to class c
+m = # of examples not belonging to class c
+
+
+
+
+
+==========
+induction tree sequence:
+- find attribute with most information gain
+- segment the entire dataset based on this attribute
+- test the segments for the attribute with the most information gain
+- repeat this process until tree is complete
+
+
+
+
+
 
 
 
